@@ -408,6 +408,7 @@ static void fm_thread_evt_cb(unsigned int event) {
             return;
         }
         vm->DetachCurrentThread();
+        mCallbackEnv = NULL;
     }
 }
 
